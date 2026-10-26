@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  h1, h2, h3, .font-kids {
+    font-family: 'Fredoka', cursive, sans-serif;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2.5s ease-in-out infinite;
+}
+
+.animate-cloud {
+  animation: cloud-drift 22s ease-in-out infinite alternate;
+}
+
+/* Custom 3D text shadow for kids titles */
+.text-shadow-3d-pink {
+  text-shadow: 
+    0 3px 0 #e02f78,
+    0 5px 8px rgba(180, 20, 80, 0.25);
+}
+
+.text-shadow-3d-purple {
+  text-shadow: 
+    0 4px 0 #5b21b6,
+    0 7px 12px rgba(91, 33, 182, 0.3);
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 4px white;
+  paint-order: stroke fill;
+}
+
+.text-stroke-white-sm {
+  -webkit-text-stroke: 2.5px white;
+  paint-order: stroke fill;
+}

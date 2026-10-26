@@ -1,0 +1,6 @@
+{
+  "name": "Mini Mundos! - Pequeños juegos, grandes descubrimientos",
+  "description": "Aplicación educativa para niños con mini mundos interactivos: memoria, creatividad, lógica, concentración y autonomía.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
